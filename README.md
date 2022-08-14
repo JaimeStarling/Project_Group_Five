@@ -5,7 +5,7 @@ This project will allow movie fans to look at what makes a movie successful, che
 Our team is committed to successfully collaborating by:
   * Utilizing a custom Slack channel to post updates and share ideas
   * Meeting 2 nights per week in addition to our regular class
-  * Share in all challenges and vicotries as a group
+  * Share in all challenges and victories as a group
 
 ## Machine Learning ##
 TBD
