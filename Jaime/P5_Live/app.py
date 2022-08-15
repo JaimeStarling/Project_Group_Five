@@ -1,6 +1,6 @@
-from import Flask, render_template, redirect
+from flask import Flask, render_template, redirect
 
-# Crflaskeate an instance of Flask
+# Create an instance of Flask
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
@@ -11,7 +11,7 @@ def home():
     return render_template("index.html")
 
 @app.route("/about_us")
-def home():
+def about_us():
     # Return template and data
     return render_template("about_us.html")
 
