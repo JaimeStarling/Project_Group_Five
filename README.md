@@ -14,8 +14,8 @@ TBD
 *This section will be adjusted based on team discussions 8/14.*
 
 For our final project, we’re utilizing 2 different pieces of data:
- * Mojo_budget_updates (Tableau & Database)
- * rotten_tomatoes_movies (Machine Learning)
+Mojo_budget_updates (Tableau & Database)
+rotten_tomatoes_movies (Machine Learning)
 
 The following data will be input for our final databases:
 
