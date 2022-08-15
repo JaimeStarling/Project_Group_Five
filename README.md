@@ -23,7 +23,7 @@ The following data will be input for our final databases:
 
 The output data will be as follows:
 
- * For our first Tableau dashboard on movie sequels:
+ * For Tableau dashboard on movie sequels:
  * ![tab1](https://github.com/JaimeStarling/Project_Group_Five/blob/Tracie/Tracie/Group5-Movies-Analysis/Data/tableau_sequels.jpg)
    * movie_title
    * movie_info
@@ -35,7 +35,7 @@ The output data will be as follows:
    * imdb_rating
    * tomatometer_rating
 
- * For our second Tableau dashboard overall films:
+ * For Tableau dashboard overall films:
  * ![tab2](https://github.com/JaimeStarling/Project_Group_Five/blob/Tracie/Tracie/Group5-Movies-Analysis/Data/tableau_overall.jpg)
    * movie_title
    * movie_info
@@ -67,4 +67,3 @@ The output data will be as follows:
    * imdb_rating
    * tomatometer_rating
    * runtime
-
