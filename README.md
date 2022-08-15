@@ -11,10 +11,11 @@ Our team is committed to successfully collaborating by:
 TBD
 
 ## Database ##
-For our final project, we’re utilizing 3 different pieces of data:
+*This section will be adjusted based on team discussions 8/14.*
+
+For our final project, we’re utilizing 2 different pieces of data:
  * Mojo_budget_updates
  * rotten_tomatoes_movies
- * Movies_w_sequels
 
 The following data will be input for our final databases:
 
