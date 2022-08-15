@@ -12,9 +12,9 @@ TBD
 
 ## Database ##
 For our final project, we’re utilizing 3 different pieces of data:
-Mojo_budget_updates
-rotten_tomatoes_movies
-Movies_w_sequels
+ * Mojo_budget_updates
+ * rotten_tomatoes_movies
+ * Movies_w_sequels
 
 The following data will be input for our final databases:
 
