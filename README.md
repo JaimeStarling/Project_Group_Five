@@ -1,5 +1,5 @@
 # Project Group Five: Through the Lens #
-This project will allow movie fans to look at what makes a movie successful, check out the success rates of sequels, and find new favorite films based on their current favorites.
+This project will showcase the financial and critical success of various films, allowing users to interact with data and see what goes into making a film successful.
 
 ## Project Overview & Key Findings ##
 Selections from our final report.
