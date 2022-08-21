@@ -9,3 +9,7 @@ View our full [project proposal](https://docs.google.com/document/d/1JHppvpLnaqw
 
 ## Final Report ##
 View our [final report](https://docs.google.com/document/d/1fuaFwj_PxujkXpxN4j_xKaGuVi-s1hda2Fo94Jl5Dkk/edit?usp=sharing).
+
+## Tableau ##
+
+View the [tableau dashboard](https://public.tableau.com/shared/NNQB55YZT?:display_count=n&:origin=viz_share_link).
