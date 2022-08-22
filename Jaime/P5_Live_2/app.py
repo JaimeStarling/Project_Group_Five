@@ -1,4 +1,4 @@
-from import Flask, render_template, redirect, request, jsonify
+from flask import Flask, render_template, redirect, request, jsonify
 
 # Crflaskeate an instance of Flask
 app = Flask(__name__)
@@ -11,9 +11,24 @@ def home():
     return render_template("index.html")
 
 @app.route("/about_us")
-def home():
+def about_us():
     # Return template and data
     return render_template("about_us.html")
+
+@app.route("/indexwithtitanic")
+def indexwithtitanic():
+    # Return template and data
+    return render_template("indexwithtitanic.html")
+
+@app.route("/tableu")
+def tableu():
+    # Return template and data
+    return render_template("tableau.html")
+
+@app.route("/tableau2")
+def tableau2():
+    # Return template and data
+    return render_template("tableau2.html")
 
 @app.route("/makePredictions", methods=["POST"])
 def make_predictions():
