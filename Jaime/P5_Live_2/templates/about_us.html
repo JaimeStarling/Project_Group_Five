@@ -10,37 +10,92 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-</head>
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><font size="+2"><b>Through the Lens</b></font></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/about_us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="indexwithtitanic">Machine Learning</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/tableau">Tableau</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/tableau2">Tableau 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/tableau3">Tableau 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div>
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            /* Create four equal columns that floats next to each other */
+            .column {
+              float: left;
+              width: 25%;
+              padding: 10px;
+              /*height: 300px; /* Should be removed. Only for demonstration */
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            </style>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"><font size="+2"><b>Through the Lens</b></font>
-                <span class="sr-only">(current)</span>
-              </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div>
+    <style>
+        p.ex1 {
+            padding-left: 20px;
+                }
+        h1 {text-align: center;}
+    </style>
+<h1><b><p class="ex1"><p class="ex1"></p>A Bit About Us</h1></b></p>
 
-        <div class="p-5 text-center bg-image rounded-3" style="background-image: url('static/selfridges.jpeg'); height: 1000px;">
-            <div class="mask" style="background-color: rgba(252, 248, 248, 0);">
-                <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-white">
-            <h1><strong>We're just four strong women in our prime, sharing a home in Miami.</h1></strong>
-             </div>
-                </div>
-                </div></div>                
-        </div>
-    </div>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <p class="ex1"><img src="/static/cute1.jpg"width="300"height="300"/></p>
+    <h2><p class="ex1">Tracie Fauth</h2>
+    <p><p class="ex1">SLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <p class="ex1"><img src="/static/cute2.jpg"width="300"height="300"/></p>
+    <h2><p class="ex1"></p>Gadise Mulat</h2>
+    <p>SLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <p class="ex1"><img src="/static/cute3.jpg"width="300"height="300"/></p>
+    <h2><p class="ex1"></p>Nasreen Fathima Habeeb Rahman</h2>
+    <p>SLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <p class="ex1"><img src="/static/cute4.jpg"width="300"height="300"/></p>
+    <h2><p class="ex1"></p>Jaime Starling</h2>
+    <p class="ex1"><p>SLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    </p>
+  </div>
 </div>
-</div></body>
+        </body>
+
+ 
 </html>
