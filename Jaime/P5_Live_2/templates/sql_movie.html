@@ -15,10 +15,10 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="/"><font size="+2"><b>Through the Lens</b></font></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav me-auto">
+    <span class="navbar-toggler-icon"></span>
+      </button>    
+    <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">        
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
@@ -26,7 +26,7 @@
             <a class="nav-link" href="/about_us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="sql_movie">Machine Learning</a>
+            <a class="nav-link active" href="/sql_movie">Machine Learning</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/tableau">Tableau</a>
@@ -43,23 +43,20 @@
 </head>
 
 <body>
-  
- 
-<p></p><div style = "position:relative; left:40px; top:2px;">
-            <a href="/about_us"><font size="+2">About Us</font></a></div>
-
+    <div class="p-5 text-center bg-image rounded-3" style="background-image: url('static/selfridges.jpeg'); height: 1000px;">
+        <div class="mask" style="background-color: rgba(252, 248, 248, 0);">
     <hr style="color:lightgray; border-width: 3px;">
     <div class="container">
         <div class="card border-primary mb-3" style="max-width: 20rem;">
-            <div class="card-header">Filters</div>
+            <div class="card-header">Filter Your Film Ideas</div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="col-form-label" for="gender">Gender</label>
-                            <select id="gender">
-                                <option value="1">Female</option>
-                                <option value="0">Male</option>
+                            <label class="col-form-label" for="genre">Genre</label>
+                            <select id="genre">
+                                <option value="1">Action</option>
+                                <option value="0">Adventure</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -115,5 +112,7 @@
 
 </div>
 </body>
+
+</html>
 
 </html>
