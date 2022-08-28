@@ -1,8 +1,12 @@
 from flask import Flask, render_template, redirect, request, jsonify
+import json
+import pandas as pd
 
 # Crflaskeate an instance of Flask
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+df=pd.read_csv('Prediction_website.csv')
+
 
 # Route to render index.html template using data from Mongo
 @app.route("/")
@@ -15,13 +19,18 @@ def about_us():
     # Return template and data
     return render_template("about_us.html")
 
-@app.route("/indexwithtitanic")
-def indexwithtitanic():
+@app.route("/sql_movie")
+def sql_movie():
     # Return template and data
-    return render_template("indexwithtitanic.html")
+    return render_template("sql_movie.html")
 
-@app.route("/tableu")
-def tableu():
+@app.route("/credits")
+def credits():
+    # Return template and data
+    return render_template("credits.html")
+
+@app.route("/tableau")
+def tableau():
     # Return template and data
     return render_template("tableau.html")
 
@@ -30,11 +39,30 @@ def tableau2():
     # Return template and data
     return render_template("tableau2.html")
 
+@app.route("/tableau3")
+def tableau3():
+    # Return template and data
+    return render_template("tableau3.html")
+
+@app.route("/movie_pred")
+def movie_pred():
+    # Return template and data
+    return render_template("movie_pred.html")
+
 @app.route("/makePredictions", methods=["POST"])
 def make_predictions():
     content = request.json["data"]
     print(content)
-    return(jsonify({"ok": True}))
+    movie=content["movie"]
+    rtn=df.loc[df.movie_title==movie]
+    return(jsonify({"ok": True, "data":json.loads(rtn.to_json(orient="records"))}))
+
+@app.route("/getmovies", methods=["GET"])
+def get_movies():
+    movies = df.movie_title.to_list()
+    
+    return(jsonify({"ok": True, "movies":movies}))
+
 
 #############################################################
 
