@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Tableau2</title>
+    <title>Credits</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/simplex/bootstrap.min.css">
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-</head>
+    <div>
+      
+<body>
     <!--navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
@@ -34,40 +35,33 @@
               <a class="nav-link" href="/tableau">Tableau</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/tableau2">Tableau 2</a>
-            </li>              <li class="nav-item">
-              <a class="nav-link" href="/tableau3">Tableau 3</a></li>
-              <a class="nav-link" href="/sql_movie">SQL</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="/credits">Credits</a></li>
+              <a class="nav-link" href="/tableau2">Tableau 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tableau3">Tableau 3 </a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="/sql_movie">SQL </a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/credits">Credits </a></li>
           </ul>
         </div>
       </div>
     </nav>
-<body>
-
-    <div class="card container-fluid" style="margin-top:25px; margin-bottom: 25px;">
-        <div style="text-align: center;">
-            <h1>Embedded Tableau</h1>
+    <div class="p-5 text-center bg-image rounded-3" style="background-image: url('static/cinema.jpeg'); height: 800px;">
+        <div class="mask" style="background-color: rgba(252, 248, 248, 0);">
+ </div>
+ <div class="d-flex justify-content-center align-items-center h-50">
+    <br> </br>
+    <div class="text-white">
+        <p></p>
+        <p></p>
+        <h1><strong>"We'd like to thank the academy..."</h1></strong>
+        <br></br>
+        <h4><strong>Rotten Tomatoes</h4></strong>
+        <h4><strong>Mojo</h4></strong>
         </div>
-    </div>
-    <hr>
-    <div class="card container-fluid" style="margin-top:25px; margin-bottom: 25px; text-align: center;">
-        <h3>Toolbar</h3>
-        <div style="display: inline-block;">
-            <button type="button" class="btn btn-primary" id="pdf">PDF</button>
-            <button type="button" class="btn btn-primary" id="image">Image</button>
-            <button type="button" class="btn btn-primary" id="crosstab">Crosstab</button>
-            <button type="button" class="btn btn-primary" id="data">Data</button>
-            <button type="button" class="btn btn-danger" id="revert">Revert</button>
-        </div>
-    </div>
+</div>
 
-    <!-- The div where we will inject our Tableau -->
-    <div id="tableauParent" class="container-fluid">
-        <div style="height:700px" id="tableauViz"></div>
-    </div>
 
-</body>
-
+    </body>
 </html>
