@@ -54,9 +54,9 @@ function makePredictions() {
             console.log(returnedData);
             $("#movie_title").text(returnedData.data[0].movie_title);
             $("#critics_actual").text(returnedData.data[0].tomatometer_rating);
-            $("#critics_pred").text(returnedData.data[0].pred_tomatometer_rating);
+            $("#critics_pred").text(returnedData.data[0].pred_tomatometer_rating.toFixed(0));
             $("#audience_actual").text(returnedData.data[0].audience_rating);
-            $("#audience_pred").text(returnedData.data[0].pred_aud_rating);
+            $("#audience_pred").text(returnedData.data[0].pred_aud_rating.toFixed(0));
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
             alert("Status: " + textStatus);
