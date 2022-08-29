@@ -12,4 +12,5 @@ View our [final report](https://docs.google.com/document/d/1fuaFwj_PxujkXpxN4j_x
 
 ## Tableau ##
 
-View the [tableau dashboard](https://public.tableau.com/shared/NNQB55YZT?:display_count=n&:origin=viz_share_link).
+View the Box Office Mojo [tableau dashboards](https://public.tableau.com/shared/NNQB55YZT?:display_count=n&:origin=viz_share_link).
+View the Rotten Tomatoes [tableau dashboard](https://public.tableau.com/app/profile/gadise/viz/RottenTomatoes_16612085696090/Dashboard1?publish=yes).
