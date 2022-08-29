@@ -23,7 +23,7 @@
 
 <body>
     <!--navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="/"><font size="+2"><b>Through the Lens</b></font></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +32,13 @@
           <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="/">Home</a>
+                <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/about_us">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/movie_pred">Machine Learning</a>
+                <a class="nav-link active" href="/movie_pred">Machine Learning</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/tableau">Tableau</a>
@@ -55,13 +55,24 @@
             </ul>
           </div>
         </div>
-      </nav>
-    <select id='selMovie'>
-    </select>
-    <button type="button" id="preds_button" class="btn btn-primary">Get Predictions</button>
-    <h1>Movie Title: <span id="movie_title"></span></h1>
-    <h2>Critics Rating: Actual: <span id="critics_actual"></span> Predicted: <span id="critics_pred"></span></h2>
-    <h2>Audience Rating: Actual: <span id="audience_actual"></span> Predicted: <span id="audience_pred"></span></h2>
+      </nav><hr><hr>
+      <div class="p-5 text-center bg-image rounded-3" style="background-image: url('static/selfridges.jpeg'); height: 1000px;">
+        <div class="mask" style="background-color: rgba(252, 248, 248, 0);">
+    <hr style="color:lightgray; border-width: 3px;">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+    <h1><b>How well did your favorite movies do with critics and audiences?</h1></b>
+    <hr><h1>How well did our machine learning program predict ratings scores?</h1>
+    <hr><h4>Click on the title below, scroll down <b><i>OR</i></b> type in a movie title, then press "Get Predictions."</h4>
+    <h4>You'll see what our machine predicted along with the actual scores.</h4>
+      <hr>
+      <h5>(We have over 14K movies made before early 2020!)</h5>
+<hr>
+    <select id='selMovie'></select><button type="button" id="preds_button" class="btn btn-primary">Get Predictions</button>
+<hr>
+    <h1><b>Movie Title:</b> <i><span id="movie_title"></span></i></h1>
+<hr>    <h2>Critics Rating: <hr>Actual: <span id="critics_actual"></span> Predicted: <span id="critics_pred"></span></h2>
+<hr>    <h2>Audience Rating: <hr>Actual: <span id="audience_actual"></span> Predicted: <span id="audience_pred"></span></h2>
 
 
 </body>
