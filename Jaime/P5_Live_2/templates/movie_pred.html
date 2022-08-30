@@ -41,13 +41,13 @@
                 <a class="nav-link active" href="/movie_pred">Machine Learning</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/tableau">Tableau</a>
+                <a class="nav-link" href="/tableau">Rotten Tomatoes Tableau</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/tableau2">Tableau 2</a>
+                <a class="nav-link" href="/tableau2">Mojo Tableau 1</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/tableau3">Tableau 3 </a></li>
+                <a class="nav-link" href="/tableau3">Mojo Tableau 2 </a></li>
               <li class="nav-item">
                 <a class="nav-link" href="/sql_movie">SQL</a></li>
               <li class="nav-item">
@@ -58,23 +58,58 @@
       </nav><hr><hr>
       <div class="p-5 text-center bg-image rounded-3" style="background-image: url('static/selfridges.jpeg'); height: 1000px;">
         <div class="mask" style="background-color: rgba(252, 248, 248, 0);">
-    <hr style="color:lightgray; border-width: 3px;">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="text-white">
     <h1><b>How well did your favorite movies do with critics and audiences?</h1></b>
     <hr><h1>How well did our machine learning program predict ratings scores?</h1>
     <hr><h4>Click on the title below, scroll down <b><i>OR</i></b> type in a movie title, then press "Get Predictions."</h4>
     <h4>You'll see what our machine predicted along with the actual scores.</h4>
-      <hr>
       <h5>(We have over 14K movies made before early 2020!)</h5>
 <hr>
     <select id='selMovie'></select><button type="button" id="preds_button" class="btn btn-primary">Get Predictions</button>
 <hr>
-    <h1><b>Movie Title:</b> <i><span id="movie_title"></span></i></h1>
-<hr>    <h2>Critics Rating: <hr>Actual: <span id="critics_actual"></span> Predicted: <span id="critics_pred"></span></h2>
-<hr>    <h2>Audience Rating: <hr>Actual: <span id="audience_actual"></span> Predicted: <span id="audience_pred"></span></h2>
+<div class="card text-white card bg-primary mb-3" style="max-width: 80rem;">
+  <div class="card-body">
+    <h1 class="card-title"><b>Movie Title:</b></h1>
+    <p class="card-text"><h1><i><span id="movie_title">?</span></i></h1></p>
+  </div></div>
+  <style>
+    .float-container {
+    border: 0px solid #fff;
+    padding: 20px;
+}
 
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 0px solid rgb(251, 248, 248);
+}  
+  </style>
+  <div class="float-container">
+    <div class="float-child">
+      <div class="card text-white bg-primary mb-3" style="max-width: 50rem;">
+        <div class="card-header"><h1><b>Critics Rating</b></h1></div>
+        <div class="card-body">
+          <h2 class="card-title"><b>Predicted:</b></h2>
+          <p class="card-text"><h1><span id="critics_pred">?</h1></span></p>
+          <h2 class="card-title"><b><i>Actual:</i></b></h2>
+          <p class="card-text"><h1><span id="critics_actual">?</h1></span></p>
+        </div></div>    </div>
+    
+    <div class="float-child">
+      <div class="card text-white bg-primary mb-3" style="max-width: 50rem;">
+        <div class="card-header"><h1><b>Audience Rating</h1></b></div>
+      <div class="card-body">
+        <h2 class="card-title"><b>Predicted:</b></h2>
+        <p class="card-text"><h1><span id="audience_pred">?</h1></span></p>
+        <h2 class="card-title"><b><i>Actual:</i></b></h2>
+        <p class="card-text"><h1><span id="audience_actual">?</h1></span></p>
+      </div></div>
+    </div>
+      </div>
+    
+  </div>
 
 </body>
-
 </html>
