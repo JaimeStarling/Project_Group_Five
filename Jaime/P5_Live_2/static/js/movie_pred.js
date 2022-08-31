@@ -57,18 +57,8 @@ function makePredictions() {
             $("#critics_pred").text(returnedData.data[0].pred_tomatometer_rating.toFixed(0));
             $("#audience_actual").text(returnedData.data[0].audience_rating);
             $("#audience_pred").text(returnedData.data[0].pred_aud_rating.toFixed(0));
-
-            if (returnedData["critics"] === "1") {
-                $("#output").text("Exceeded Our Expectations!");
-            } else {
-               $("#output").text("Maybe The Critics Were a Bit Harsh");
-            }
-            if (returnedData["audience"] === "1") {
-                $("#output").text("Exceeded Our Expectations!");
-            } else {
-                $("#output").text("Everyone's a Critic...");
-            }
-
+        
+            
         },
 
         error: function(XMLHttpRequest, textStatus, errorThrown) {
