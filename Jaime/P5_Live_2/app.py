@@ -1,10 +1,13 @@
+from datetime import date
 from flask import Flask, render_template, redirect, request, jsonify
 import json
 import pandas as pd
+from sqlHelper import SQLHelper
 
 # Crflaskeate an instance of Flask
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+sqlHelper = SQLHelper()
 df=pd.read_csv('Prediction_website.csv')
 
 
@@ -20,7 +23,7 @@ def about_us():
     return render_template("about_us.html")
 
 @app.route("/sql_movie")
-def sql_movie():
+def sql_movie():pip
     # Return template and data
     return render_template("sql_movie.html")
 
@@ -62,6 +65,20 @@ def get_movies():
     movies = df.movie_title.to_list()
     
     return(jsonify({"ok": True, "movies":movies}))
+
+@app.route("/getSQL", methods=["POST"])
+def get_sql():
+    content = request.json["data"]
+    print(content)
+    
+    # parse
+    genre = content["genre"]
+    min_budget = float(content["min_budget"])
+    max_budget = float(content["max_budget"])
+    release_date = content["release_date"]
+    mpaa = content["mpaa"]
+    df = sqlHelper.getDataFromDatabase(genre,min_budget,max_budget,release_date,mpaa)
+    return(jsonify(json.loads(df.to_json(orient="records"))))
 
 
 #############################################################
