@@ -1,8 +1,6 @@
 # Project Group Five: Through the Lens #
-This project will showcase the financial and critical success of various films, allowing users to interact with data and see what goes into making a film successful.
-
-## Project Overview & Key Findings ##
-Selections from our final report.
+![]()
+![]()
 
 ## Project Proposal ##
 View our full [project proposal](https://docs.google.com/document/d/1JHppvpLnaqwBbRy21NopNgkC35ulRRETCe-9cyeDX0U/edit?usp=sharing).
