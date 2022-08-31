@@ -1,6 +1,6 @@
 # Project Group Five: Through the Lens #
-![](https://github.com/JaimeStarling/Project_Group_Five/blob/main/Group%205%20Executive%20Summary.pdf)
-![]()
+![Exec Report 1](https://github.com/JaimeStarling/Project_Group_Five/blob/main/Group%205%20Executive%20Summary.pdf)
+![Exec Report 2](https://github.com/JaimeStarling/Project_Group_Five/blob/main/Group%205%20Executive%20Summary%20PNG_Page_1.png)
 
 ## Project Proposal ##
 View our full [project proposal](https://docs.google.com/document/d/1JHppvpLnaqwBbRy21NopNgkC35ulRRETCe-9cyeDX0U/edit?usp=sharing).
