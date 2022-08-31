@@ -1,5 +1,5 @@
 # Project Group Five: Through the Lens #
-![]()
+![](https://github.com/JaimeStarling/Project_Group_Five/blob/main/Group%205%20Executive%20Summary.pdf)
 ![]()
 
 ## Project Proposal ##
