@@ -6,11 +6,11 @@ Team 5 presents Through the Lens - a look at films and what drives their success
 Users will be able to predict a film’s critical success based on certain criteria, interact with a dashboard to explore the financial success of different films, and see the way films are rated on Rotten Tomatoes.
 
 ### Data sources ###
-The ![Box Office Mojo](https://www.kaggle.com/datasets/igorkirko/wwwboxofficemojocom-movies-with-budget-listed) data provides an insight into the financial success of films, alongside the actors, directors, genres, ratings, and runtimes.
-The ![Rotten Tomatoes](https://www.kaggle.com/datasets/stefanoleone992/rotten-tomatoes-movies-and-critic-reviews-dataset) data provides information about audience and critic ratings.
+The [Box Office Mojo](https://www.kaggle.com/datasets/igorkirko/wwwboxofficemojocom-movies-with-budget-listed) data provides an insight into the financial success of films, alongside the actors, directors, genres, ratings, and runtimes.
+The [Rotten Tomatoes](https://www.kaggle.com/datasets/stefanoleone992/rotten-tomatoes-movies-and-critic-reviews-dataset) data provides information about audience and critic ratings.
 
 ### Final Website ###
-![landing page]() 
+![landing page](https://github.com/JaimeStarling/Project_Group_Five/blob/main/Tracie/website.png) 
 The final product of this project is the above [website](https://through-the-lens.herokuapp.com/), which includes the following sections:
   * About Us
     * Meet the team who worked on Through the Lens!
