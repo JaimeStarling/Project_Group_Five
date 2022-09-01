@@ -15,7 +15,7 @@ function getSQL() {
     var max_budget = $("#max_budget").val();
     var release_date = $("#release_date").val();
     var mpaa = $("#mpaa").val();
-
+    var runtime = $("#mpaa").val()
 
     // check if inputs are valid
 
@@ -25,7 +25,8 @@ function getSQL() {
         "min_budget":min_budget,
         "max_budget":max_budget,
         "release_date":release_date,
-        "mpaa":mpaa
+        "mpaa":mpaa,
+        "runtime":runtime
     }
 
     // Perform a POST request to the query URL

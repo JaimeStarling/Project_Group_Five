@@ -58,19 +58,17 @@ function makePredictions() {
             $("#audience_actual").text(returnedData.data[0].audience_rating);
             $("#audience_pred").text(returnedData.data[0].pred_aud_rating.toFixed(0));
         
-            if (returnedData["critics_pred"] >= returnedData["critics_actual"]) {
-                $("#output").text("Exceeded our expectations!");
-            } 	
-                else {
-                $("#output").text("Maybe they were a bit harsh…");
-            }
+       //     if (returnedData["critics_pred"] >= returnedData["critics_actual"]) {
+              //  $("#output").text("Exceeded our expectations!");
+          //  } else {
+              //  $("#output").text("Maybe they were a bit harsh…");
+            //}
             
-            if (returnedData["audience_pred"] >= returnedData["audience_actual"]) {
-                $("#output").text("Exceeded our expectations!");
-            } 	
-                else {
-                $("#output").text("Everyone's a critic…");
-            }
+           // if (returnedData["audience_pred"] >= returnedData["audience_actual"]) {
+              //  $("#output").text("Exceeded our expectations!");
+          //  } else {
+             //   $("#output").text("Everyone's a critic…");
+         //   }
                 
         },
 
