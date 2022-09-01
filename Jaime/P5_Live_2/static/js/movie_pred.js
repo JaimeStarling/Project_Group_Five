@@ -55,20 +55,23 @@ function makePredictions() {
             $("#movie_title").text(returnedData.data[0].movie_title);
             $("#critics_actual").text(returnedData.data[0].tomatometer_rating);
             $("#critics_pred").text(returnedData.data[0].pred_tomatometer_rating.toFixed(0));
+            $("#critics_diff").text(returnedData.data[0].critics_diff.toFixed(0));   
             $("#audience_actual").text(returnedData.data[0].audience_rating);
             $("#audience_pred").text(returnedData.data[0].pred_aud_rating.toFixed(0));
-        
-       //     if (returnedData["critics_pred"] >= returnedData["critics_actual"]) {
-              //  $("#output").text("Exceeded our expectations!");
-          //  } else {
-              //  $("#output").text("Maybe they were a bit harsh…");
-            //}
+            $("#audience_diff").text(returnedData.data[0].audience_diff.toFixed(0));
+            if (returnedData.data[0].critics_diff > 0.0) {
+                $("#output1").text("Exceeded our expectations!");
+            } 	
+            else {
+                $("#output1").text("Maybe they were a bit harsh…");
+            }
             
-           // if (returnedData["audience_pred"] >= returnedData["audience_actual"]) {
-              //  $("#output").text("Exceeded our expectations!");
-          //  } else {
-             //   $("#output").text("Everyone's a critic…");
-         //   }
+            if (returnedData.data[0].audience_diff > 0.0) {
+                $("#output2").text("Exceeded our expectations!");
+            } 	
+            else {
+                $("#output2").text("Everyone's a critic…");
+            }
                 
         },
 
