@@ -23,7 +23,7 @@ def about_us():
     return render_template("about_us.html")
 
 @app.route("/sql_movie")
-def sql_movie():pip
+def sql_movie():
     # Return template and data
     return render_template("sql_movie.html")
 
